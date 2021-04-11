@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
     "skipLibCheck": true,
-    "target": "es5",
+    "target": "es2017",
     "module": "commonjs",
-    "lib": ["es2015"],
     "outDir": "./ts-dist",
     "strict": true,
     "esModuleInterop": false,
