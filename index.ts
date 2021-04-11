@@ -3,7 +3,7 @@ import * as github from "@actions/github";
 
 const token: string = core.getInput("token");
 const label: string = core.getInput("label");
-
+console.log(`Label: "${label}"`);
 const octokit = github.getOctokit(token);
 
 async function run() {

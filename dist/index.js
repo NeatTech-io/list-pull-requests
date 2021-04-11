@@ -6049,6 +6049,7 @@ const core = __nccwpck_require__(186);
 const github = __nccwpck_require__(438);
 const token = core.getInput("token");
 const label = core.getInput("label");
+console.log(`Label: "${label}"`);
 const octokit = github.getOctokit(token);
 async function run() {
     const prs = await octokit.pulls
