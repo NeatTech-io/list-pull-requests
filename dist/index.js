@@ -6057,7 +6057,7 @@ async function run() {
         repo: github.context.repo.repo,
     })
         .then((r) => r.data);
-    console.log(prs);
+    console.log(JSON.stringify(prs));
     const prsWirthLabel = prs.filter((pr) => pr.labels.find(({ name }) => name === label));
     const output = prsWirthLabel.map((pr) => pr.html_url).join("\n");
     core.setOutput("prs", output);

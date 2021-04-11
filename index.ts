@@ -14,7 +14,7 @@ async function run() {
     })
     .then((r) => r.data);
 
-  console.log(prs);
+  console.log(JSON.stringify(prs));
   const prsWirthLabel = prs.filter((pr) =>
     pr.labels.find(({ name }) => name === label)
   );
